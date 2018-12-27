@@ -63,7 +63,7 @@ We will train a neural network language model using reviews on Yelp dataset. Whe
     a. What is the purpose of the function *bptt_batch()*  and *repackage_hidden()* in *model.py*  
     b. Describe an overview procedure of the function *train()* in *model.py*  
     
-2. Write an inference file *predict.py* contain three functions:  
-    a. **load_model()**: Load saved argument file and model file
-    a. **rev_gen()**: Generate a review starting from *SOS* until reaching *EOS*  
-    b. **wd_pred()**: Predict a word given some previous words 
+2. Write an inference file *predict.py* containing three functions:  
+    a. **load_model()**: Load saved argument file and model file  
+    b. **rev_gen()**: Generate a review starting from *SOS* until reaching *EOS*  
+    c. **wd_pred()**: Predict a word given some previous words 
