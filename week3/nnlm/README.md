@@ -49,7 +49,7 @@ We will train a neural network language model using reviews on Yelp dataset. Whe
   - Change the current directory to "week3/nnlm"
   - Run this command:
     ```
-    python model.py
+    python model.py [--use_cuda]
     ```
   - See other parameters, this command:
     ```
@@ -62,7 +62,8 @@ We will train a neural network language model using reviews on Yelp dataset. Whe
     a. What is the purpose of the function *bptt_batch()*  and *repackage_hidden()* in *model.py*  
     b. Describe an overview procedure of the function *train()* in *model.py*  
     
-2. Write an inference file *predict.py* containing three functions:  
+2. Don't train the model. In this assignment, we focus on writing an inference of a neural network using available 
+pre-trained model. Let's write an inference file *predict.py* containing three functions:  
     a. **load_model()**: Load saved argument file and model file  
     b. **rev_gen()**: Generate a review starting from *SOS* until reaching *EOS*  
     c. **wd_pred()**: Predict a word given some previous words 
