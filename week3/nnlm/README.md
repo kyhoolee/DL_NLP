@@ -22,8 +22,8 @@ We will train a neural network language model using reviews on Yelp dataset. Whe
 
 ## Folder Structure
   1. model.py: main script to train the model
-  2. predict.py: an interface to generate a query
-  3. generate.py (optional): a funtion to generate a list of reviews avd save into a file
+  2. predict.py: an interface to generate a review and recommend words given previous words
+  3. generate.py (optional): a function to generate a list of reviews avd save into a file
   4. utils/
     - core_nns.py: a script to design the neural network architecture
     - data_utils.py: a script to load data and convert to indices
