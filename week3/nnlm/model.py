@@ -15,7 +15,7 @@ Data2tensor.set_randseed(1234)
 class Languagemodel(object):
     def __init__(self, args):
         self.args = args
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.device = torch.device("cuda" if self.args.use_cuda else "cpu")
         self.word2idx = self.args.vocab.wd2idx(self.args.vocab.w2i,
                                                allow_unk=self.args.allow_unk, start_end=self.args.se_words)
         self.label2idx = self.args.vocab.tag2idx(self.args.vocab.l2i)
@@ -134,8 +134,11 @@ class Languagemodel(object):
                     nimp = 0
                     best_epoch = epoch
                     # save the model into file
-                    with open(self.args.trained_model, 'wb') as f:
-                        torch.save(self.model, f)
+                    # Convert model to CPU to avoid out of GPU memory
+                    self.model.to("cpu")
+                    torch.save(self.model.state_dict(), self.args.trained_model)
+                    self.model.to(self.device)
+
                     best_val_loss = val_loss
 
                     print('-' * 89)
@@ -147,8 +150,8 @@ class Languagemodel(object):
                     nimp += 1
                     if nimp >= self.args.es:
                         # load the model for testing
-                        with open(self.args.trained_modell, 'rb') as f:
-                            self.model = torch.load(f)
+                        self.model.load_state_dict(torch.load(self.args.trained_model))
+                        self.model.to(self.device)
 
                         test_loss, test_total_word, test_elapsed = self.evaluate_batch(test_data)
                         print('-' * 89)
@@ -162,8 +165,8 @@ class Languagemodel(object):
                         return
 
             # load the model for testing
-            with open(self.args.trained_modell, 'rb') as f:
-                self.model = torch.load(f)
+            self.model.load_state_dict(torch.load(self.args.trained_model))
+            self.model.to(self.device)
 
             test_loss, test_total_word, test_elapsed = self.evaluate_batch(test_data)
             print('-' * 89)
@@ -178,8 +181,8 @@ class Languagemodel(object):
             print('-' * 89)
             print('Exiting from training early')
             # load the model for testing
-            with open(self.args.trained_modell, 'rb') as f:
-                self.model = torch.load(f)
+            self.model.load_state_dict(torch.load(self.args.trained_model))
+            self.model.to(self.device)
 
             test_loss, test_total_word, test_elapsed = self.evaluate_batch(test_data)
             print('-' * 89)
@@ -252,6 +255,8 @@ if __name__ == '__main__':
     parser.add_argument('--trained_model', type=str, default='./results/lm.m', help='path to save the final model')
 
     parser.add_argument('--model_args', type=str, default='./results/lm.args', help='path to save the model argument')
+
+    parser.add_argument("--use_cuda", action='store_true', default=False, help="GPUs Flag (default False)")
         
     args = parser.parse_args()
     
