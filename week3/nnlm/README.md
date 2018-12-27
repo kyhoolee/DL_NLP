@@ -22,13 +22,12 @@ We will train a neural network language model using reviews on Yelp dataset. Whe
 
 ## Folder Structure
   1. model.py: main script to train the model
-  2. interactive.py: an interface to generate a query
-  3. predict.py: a function to predict if two queries are concatenation or separation
-  4. generate.py: a funtion to generate a list of queries avd save into a file
-  5. utils/
+  2. predict.py: an interface to generate a query
+  3. generate.py (optional): a funtion to generate a list of reviews avd save into a file
+  4. utils/
     - core_nns.py: a script to design the neural network architecture
     - data_utils.py: a script to load data and convert to indices
-  6. results/: a folder to save the train model
+  5. results/: a folder to save the train model
     - *.m: a trained-model file
     - *.args: a model-argument file
 ## Package workflow
