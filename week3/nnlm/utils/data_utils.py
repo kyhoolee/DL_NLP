@@ -122,24 +122,6 @@ class Vocab(object):
         return f
 
     @staticmethod
-    def seqchunk(data, seq_length=1000):
-        """
-        Args:
-            data: generator of (sentence, tags) tuples
-            minibatch_size: (int)
-    
-        Yields:
-            list of tuples
-    
-        """
-        seq = []
-        for x in data:
-            seq += list(x)
-            while len(seq) >= seq_length:
-                yield seq[:seq_length]
-                seq = seq[seq_length:]
-
-    @staticmethod
     def minibatches(data, batch_size):
         """
         Args:

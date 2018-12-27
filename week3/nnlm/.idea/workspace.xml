@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c6c4e36-89e7-4323-865a-e1042f5417b8" name="Default" comment="" />
+    <list default="true" id="6c6c4e36-89e7-4323-865a-e1042f5417b8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/data_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/data_utils.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,13 +80,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="206" />
-          <entry key="md" value="315" />
+          <entry key="md" value="1367" />
           <entry key="py" value="1240" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="315" />
+          <entry key="Markdown" value="1367" />
           <entry key="Python" value="1446" />
         </counts>
       </usages-collector>
@@ -87,11 +94,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-44">
-              <caret line="59" column="50" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="50" />
+            <state relative-caret-position="9">
+              <caret line="111" column="13" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="13" />
               <folding>
                 <element signature="e#16#31#0" expanded="true" />
               </folding>
@@ -99,12 +106,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1104">
-                <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+              <first_editor relative-caret-position="585">
+                <caret line="68" column="63" lean-forward="true" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
               </first_editor>
               <second_editor />
             </state>
@@ -114,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/core_nns.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1291">
-              <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+            <state relative-caret-position="-1708">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -126,11 +133,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/data_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-179">
-              <caret line="267" column="19" selection-start-line="267" selection-start-column="19" selection-end-line="267" selection-end-column="19" />
+            <state relative-caret-position="2577">
+              <caret line="121" column="16" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
-                <marker date="1545893574283" expanded="true" signature="3035:3044" ph="..." />
+                <marker date="1545894963134" expanded="true" signature="3035:3044" ph="..." />
               </folding>
             </state>
           </provider>
@@ -163,10 +170,10 @@
         <option value="$PROJECT_DIR$/utils/data_analysis.py" />
         <option value="$PROJECT_DIR$/interactive.py" />
         <option value="$PROJECT_DIR$/utils/other_utils.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/model.py" />
-        <option value="$PROJECT_DIR$/utils/data_utils.py" />
         <option value="$PROJECT_DIR$/utils/core_nns.py" />
+        <option value="$PROJECT_DIR$/utils/data_utils.py" />
+        <option value="$PROJECT_DIR$/model.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -189,6 +196,16 @@
             <path>
               <item name="nnlm" type="b2602c69:ProjectViewProjectNode" />
               <item name="nnlm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nnlm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nnlm" type="462c0819:PsiDirectoryNode" />
+              <item name="dataset" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nnlm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nnlm" type="462c0819:PsiDirectoryNode" />
+              <item name="results" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nnlm" type="b2602c69:ProjectViewProjectNode" />
@@ -320,8 +337,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13107823" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13107823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -334,7 +352,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32923833" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50236964" side_tool="true" weight="0.3356926" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32861477" />
-      <window_info anchor="bottom" x="-1910" y="292" width="1899" height="331" id="Python Console" order="10" sideWeight="0.49947917" visible="true" weight="0.43366092" />
+      <window_info anchor="bottom" x="-1910" y="292" width="1899" height="331" id="Python Console" order="10" sideWeight="0.49947917" weight="0.22113022" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -378,44 +396,44 @@
     <entry file="file://$PROJECT_DIR$/utils/other_utils.py" />
     <entry file="file://$PROJECT_DIR$/generate.py" />
     <entry file="file://$PROJECT_DIR$/interactive.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1104">
-            <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="111" column="13" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="13" />
+          <folding>
+            <element signature="e#16#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/data_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="267" column="19" selection-start-line="267" selection-start-column="19" selection-end-line="267" selection-end-column="19" />
+        <state relative-caret-position="2577">
+          <caret line="121" column="16" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1545893574283" expanded="true" signature="3035:3044" ph="..." />
+            <marker date="1545894963134" expanded="true" signature="3035:3044" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/core_nns.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1291">
-          <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+        <state relative-caret-position="-1708">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="59" column="50" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="50" />
-          <folding>
-            <element signature="e#16#31#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="585">
+            <caret line="68" column="63" lean-forward="true" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -1,22 +1,23 @@
 # Neural Network Language Model
 ## Introduction
 - A general package to learn neural network language models. They are:
-
   + RNN (BiRNN), deep-RNN (deep-biRNN)
   + GRU (BiGRU), deep-GRU (deep-biGRU)
   + LSTM (BiLSTM), deep-LSTM (deep-biLSTM)
-  
-- Inputs:
-  + Train_data: used for training a model
-  + Dev_data: used for validating a model
-  + Test_data: used for testing a model
-- Outputs:
-  + A trained-model file
-  + A model-argument file
+
+## Review-domain Language Model
+We will train a neural network language model using reviews on Yelp dataset. Where:  
+- Inputs in the *dataset* folder:
+  + Train_data (*./dataset/train.small.txt*): used for training a model
+  + Dev_data (*./dataset/val.small.txt*): used for validating a model
+  + Test_data (*./dataset/test.small.txt*): used for testing a model
+- Outputs in the *results* folder:
+  + A trained-model file *lm.m*
+  + A model-argument file *lm.args*
 - Applications:
-  + Text generation
+  + Text generation: generate a restaurant review 
     - P(qj)=P(w1,w2,...,wn)
-  + Text recommendation
+  + Text recommendation: recommend next words given a context
     - P(wi|wi-1,...,w1)
 
 ## Folder Structure
@@ -44,15 +45,25 @@
 - Write ``predict.py`` file to predict the next words given some initial words: P(wi|wi-1,...,w1) and generate a piece of text.
 
 ## Project usage
-1. Download this repository: git clone https://github.com/duytinvo/DL_NLP
+1. Download this repository: git clone https://github.com/duytinvo/DL_NLP.git
 2. Train the model:
-  - Change the current directory to "nnlm"
+  - Change the current directory to "week3/nnlm"
   - Run this command:
-```
-python model.py --train_file /media/data/queries/training_set_180712_rev00.csv --test_file /media/data/queries/test_set_180712_rev00.csv --trained_model ./results/model.query.3l.fr180712.pt --model_args ./results/model.query.3l.fr180712.args
-```
+    ```
+    python model.py
+    ```
   - See other parameters, this command:
-```
-python model.py -h
-```
+    ```
+    python model.py -h
+    ```
 
+## Assignment
+
+1. Theory questions:  
+    a. What is the purpose of the function *bptt_batch()*  and *repackage_hidden()* in *model.py*  
+    b. Describe an overview procedure of the function *train()* in *model.py*  
+    
+2. Write an inference file *predict.py* contain three functions:  
+    a. **load_model()**: Load saved argument file and model file
+    a. **rev_gen()**: Generate a review starting from *SOS* until reaching *EOS*  
+    b. **wd_pred()**: Predict a word given some previous words 

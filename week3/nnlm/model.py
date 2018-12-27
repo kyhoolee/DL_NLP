@@ -24,16 +24,12 @@ class Languagemodel(object):
                               args.nlayers, args.dropout, args.tied, args.bidirect).to(self.device)
 
     def repackage_hidden(self, h):
-        """Wraps hidden states in new Tensors, to detach them from their history."""
         if isinstance(h, torch.Tensor):
             return h.detach()
         else:
             return tuple(self.repackage_hidden(v) for v in h)
 
     def bptt_batch(self, source, i):
-        """
-        Return a batch, whose size depends on source length
-        """
         seq_len = min(self.args.bptt, source.size(1) - 1 - i)
         data = source[:, i:i+seq_len]
         target = source[:, i+1:i+1+seq_len]
